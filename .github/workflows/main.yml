@@ -1,0 +1,22 @@
+name: Simple Workflow
+
+on:
+  workflow_dispatch:
+
+Jobs:
+ release:
+   runs-on: ubuntu-latest
+
+ steps:
+  - name: Checkout source code
+    uses: actions/checkout@v3
+
+  - name: Install dependencies
+    run: |
+      apt-get update
+      apt install python3
+      print("Hello World")
+
+ 
+   
+ 
