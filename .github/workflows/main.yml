@@ -12,5 +12,4 @@ jobs:
 
       - name: Install dependencies
         run: |
-           sudo apt-get update
            apt install python3
