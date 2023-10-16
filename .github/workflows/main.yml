@@ -15,7 +15,6 @@ Jobs:
     run: |
       apt-get update
       apt install python3
-      print("Hello World")
 
  
    
