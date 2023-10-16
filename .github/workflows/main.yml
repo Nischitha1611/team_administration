@@ -14,4 +14,6 @@ jobs:
         run: |
            sudo apt-get update
            sudo apt install python3
-           print("Hello World")
+
+      - name: Run python file
+        run: python simple.py
