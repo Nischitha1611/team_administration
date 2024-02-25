@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Fetch origin
-        run: git fetch origin main
+        run: git fetch origin $GITHUB_BASE_REF
         
       - name: Install dependencies
         run: |
