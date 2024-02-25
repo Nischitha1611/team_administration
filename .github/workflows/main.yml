@@ -7,12 +7,12 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch origin
-        run: |
-          git fetch origin main
-      - name: Checkout source code
+      - name: Checkout
         uses: actions/checkout@v3
-
+        
+      - name: Fetch origin
+        run: git fetch origin main
+        
       - name: Install dependencies
         run: |
            sudo apt-get update
